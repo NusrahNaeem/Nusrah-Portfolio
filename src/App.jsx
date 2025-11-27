@@ -5,7 +5,7 @@ import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Nusrah-Portfolio">
       <Toaster />
       <Routes>
         {/* ✅ Fix here */}
