@@ -3,15 +3,34 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "React Js Website home page",
-    description: "A beautiful home page app using React and Tailwind.",
+    title: "Car Sale Website (PHP & MySQL)",
+    description:
+      "A multi-page car listing website built with complex MySQL database structures. Features a powerful admin panel for managing cars, categories, and customer inquiries. Designed for smooth browsing, easy updates, and a professional online presence.",
+    image: "/images/Cap.PNG",
+    tags: ["PHP", "MySQL"],
+    // demoUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
+    // githubUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
+  },
+   {
+    id: 2,
+    title: "Furniture & Glasswork Business Website (PHP & MySQL)",
+    description:
+      "A fully dynamic website built with PHP and MySQL, featuring an easy-to-use admin panel. Includes complete CRUD operations for managing products, categories, and gallery images.",
+    image: "/images/Capture.PNG",
+    tags: ["PHP", "MySQL"],
+    demoUrl: "https://bismillahglassinterior.com/",
+   },
+  {
+    id: 3,
+    title: "StepUp Shoes – Single Page Application (SPA)",
+    description: "A fast and modern single-page website designed to showcase shoes beautifully. Built for smooth scrolling, quick navigation, and a clean shopping experience. Optimized layout highlights featured products and improves overall user engagement.",
     image: "/images/website.PNG",
     tags: ["React", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/NusrahNaeem/React-Js-Website.git",
+    demoUrl: "https://nusrahnaeem.github.io/React-Js-Website/",
+    githubUrl: "https://nusrahnaeem.github.io/React-Js-Website/",
   },
   {
-    id: 2,
+    id: 4,
     title: "Website for Eye Glasses",
     description:
       "Responsive Website using Html, CSS and Javascript.",
@@ -21,7 +40,7 @@ const projects = [
     githubUrl: "https://nusrahnaeem.github.io/EyeOnic-website-/",
   },
   {
-    id: 3,
+    id: 5,
     title: "E-commerce Platform",
     description:
       "A simple and interactive To-Do List application built using HTML, CSS, and JavaScript.",
@@ -30,6 +49,8 @@ const projects = [
     demoUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
     githubUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
   },
+  
+   
 ];
 
 export const ProjectsSection = () => {

@@ -1,25 +1,3 @@
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-// import tailwindcss from "@tailwindcss/vite"
-// import path from 'path'
-// import { fileURLToPath } from 'url'
-
-
-
-
-// const __filename = fileURLToPath(import.meta.url)
-// const __dirname = path.dirname(__filename)
-
-// export default defineConfig({
-//   plugins: [react(), tailwindcss()],
-//     base: "/PORTFOLIO-Nusrah-Naeem/",
-//   resolve: {
-//     alias: {
-//       "@": path.resolve(__dirname, "./src"),
-//     },
-//   },
-// });
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
@@ -38,5 +16,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    historyApiFallback: true, // ✅ for dev server (npm run dev)
+  },
+  preview: {
+    historyApiFallback: true, // ✅ for preview after build (npm run preview)
+  },
 })
-

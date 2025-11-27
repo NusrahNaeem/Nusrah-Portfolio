@@ -1,42 +1,18 @@
-// import { BrowserRouter, Routes } from "react-router-dom";
-// import { NotFound } from "./pages/NotFound";
-
-
-
-// function App() {
-//  return (
-//     <> 
-//     <BrowserRouter>
-//     <Routes>
-//       <Route index element={<Home/>} />
-//       <Route path="*" element={<NotFound/>}/>
-//     </Routes>
-//     </BrowserRouter> </>
-//   );
- 
-// }
-
-// export default App
-
-
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";       // correct, because Home.jsx uses "export const"
 import { NotFound } from "./pages/NotFound";
 import { Toaster } from "./components/ui/toaster";
 
-
-
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Toaster />
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Routes>
+        {/* ✅ Fix here */}
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -5,24 +5,25 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", category: "frontend" },
-  { name: "JavaScript", category: "frontend" },
-  { name: "React",  category: "frontend" },
-  { name: "TypeScript", category: "frontend" },
-  { name: "Tailwind CSS",  category: "frontend" },
-
+  { name: "HTML/CSS", level: 70, category: "frontend" },
+  { name: "JavaScript", level: 50, category: "frontend" },
+  { name: "React", level: 60, category: "frontend" },
+  { name: "Tailwind CSS", level: 60, category: "frontend" },
+  { name: "Bootstrap", level: 75, category: "frontend" },   // ➝ Added
 
   // Backend
-  { name: "Node.js", category: "backend" },
-  { name: "Express", category: "backend" },
-  { name: "MongoDB", category: "backend" },
-
+  { name: "Node.js", level: 65, category: "backend" },
+  { name: "Express", level: 65, category: "backend" },
+  { name: "MongoDB", level: 70, category: "backend" },
+  { name: "PHP", level: 70, category: "backend" },
+  { name: "Laravel", level: 70, category: "backend" },
+  { name: "MySQL", level: 75, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", category: "tools" },  
-  { name: "Figma", category: "tools" },
-
+  { name: "Git/GitHub", level: 65, category: "tools" },
+  { name: "Figma", level: 70, category: "tools" },
 ];
+
 
 
 // const skills = [
@@ -96,7 +97,7 @@ export const SkillsSection = () => {
 
               <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
-                  {/* {skill.level}% */}
+                   {skill.level}% 
                 </span>
               </div>
             </div>
