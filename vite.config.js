@@ -34,7 +34,7 @@ const __dirname = path.dirname(__filename)
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Nusrah-Portfolio/", // Simple static base (remove the conditional)
+  base: '/Nusrah-Portfolio/', // Simple static base (remove the conditional)
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
