@@ -6,7 +6,7 @@ const projects = [
     title: "Car Sale Website (PHP & MySQL)",
     description:
       "A multi-page car listing website built with complex MySQL database structures. Features a powerful admin panel for managing cars, categories, and customer inquiries. Designed for smooth browsing, easy updates, and a professional online presence.",
-    image: "/images/Cap.PNG",
+    image: "images/Cap.PNG",
     tags: ["PHP", "MySQL"],
     // demoUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
     // githubUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
@@ -16,7 +16,7 @@ const projects = [
     title: "Furniture & Glasswork Business Website (PHP & MySQL)",
     description:
       "A fully dynamic website built with PHP and MySQL, featuring an easy-to-use admin panel. Includes complete CRUD operations for managing products, categories, and gallery images.",
-    image: "/images/Capture.PNG",
+    image: "images/Capture.PNG",
     tags: ["PHP", "MySQL"],
     demoUrl: "https://bismillahglassinterior.com/",
    },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "StepUp Shoes – Single Page Application (SPA)",
     description: "A fast and modern single-page website designed to showcase shoes beautifully. Built for smooth scrolling, quick navigation, and a clean shopping experience. Optimized layout highlights featured products and improves overall user engagement.",
-    image: "/images/website.PNG",
+    image: "images/website.PNG",
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://nusrahnaeem.github.io/React-Js-Website/",
     githubUrl: "https://nusrahnaeem.github.io/React-Js-Website/",
@@ -34,7 +34,7 @@ const projects = [
     title: "Website for Eye Glasses",
     description:
       "Responsive Website using Html, CSS and Javascript.",
-    image: "/images/eyeonic.PNG",
+    image: "images/eyeonic.PNG",
     tags: ["TypeScript", "D3.js", "Next.js"],
     demoUrl: "#",
     githubUrl: "https://nusrahnaeem.github.io/EyeOnic-website-/",
@@ -44,7 +44,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "A simple and interactive To-Do List application built using HTML, CSS, and JavaScript.",
-    image: "/images/to-do.PNG",
+    image: "images/to-do.PNG",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
     githubUrl: "https://nusrahnaeem.github.io/To-Do-List-JavaScript-/",
