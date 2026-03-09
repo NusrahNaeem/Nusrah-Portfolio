@@ -28,8 +28,11 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm install
-        
+        run: |
+          npm ci
+          # Fix permissions for node_modules/.bin
+          chmod +x node_modules/.bin/vite
+          
       - name: Build
         run: npm run build
         
