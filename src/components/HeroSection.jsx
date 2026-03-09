@@ -21,9 +21,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-           Full-Stack Web Developer skilled in PHP, MySQL, Laravel, JavaScript, HTML, CSS, and the MERN stack. I build responsive, 
-           user-friendly websites and custom applications with clean UI and efficient backend logic. Currently pursuing an
-            Advanced Diploma in Software Engineering to strengthen modern web development expertise.
+           MERN Stack and React Developer passionate about building responsive and user-friendly web applications. Skilled in JavaScript, React.js, Node.js, MongoDB, HTML, and CSS, with additional experience in PHP and MySQL. Currently pursuing an Advanced Diploma in Software Engineering to expand expertise in modern web technologies.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
