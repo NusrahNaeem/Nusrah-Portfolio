@@ -5,11 +5,14 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+# Give the workflow full permissions to write to the repository
 permissions:
   contents: write
+  pages: read
+  id-token: none
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -31,9 +34,11 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          # Use the built-in GitHub token
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy to gh-pages: ${{ github.event.head_commit.message }}'
